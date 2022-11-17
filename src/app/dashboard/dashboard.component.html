@@ -1,0 +1,66 @@
+<!-- <div>
+<h1 class="text-center  text-primary"><u>TODO List</u></h1>
+</div> -->
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light pt-5 pb-5">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">TODO List</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" mdbCollapse>
+
+
+
+      <!-- Search form -->
+      <form class="d-flex input-group w-auto ms-auto">
+        <input type="search" class="form-control" id="searchId" placeholder="Type query" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="button" >
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+
+
+
+<table class="table border border-dark border-2 mt-4  text-center m-auto ">
+  <thead class="border border-dark border-2">
+  <tr >
+   
+    <th class="border border-dark border-2 p-3 ">id</th>
+    <th class="border border-dark border-2">title</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let todo of todoList;
+    let i=index">
+    
+    
+    <td class="border border-dark border-2 p-3">{{todo.id}}</td>
+    <td class="border border-dark border-2">{{todo.title}}</td>
+  </tr>
+  </tbody>
+
+</table>
+
+
+
+
+
+
+
